@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <link rel="shortcut icon" type="imagex/png" href="../LOJA/img/logo2.PNG" id="icon">
+    <script src="../js/cadastro.js"></script>
+</head>
+<body class="principal">
+    <div class="formulario">
+        <form id="form-login" onsubmit="cadastro(event)">
+            <div class="imagem">
+            <img src="./img/logo2.PNG" alt="">
+            </div>
+    <h3>CADASTRO</h3>
+    
+    <input type="text" placeholder="E-mail" id="usuario"
+     required="true" minlength="3" maxlength="15">
+    <br>
+    <input type="tel"  placeholder="Telefone" id="telefone">
+    <input type="text" placeholder="CPF"  id="cpf">
+    <input type="password" placeholder="Senha" id="senha" 
+    required="true" minlength="3" maxlength="8">
+    <br>
+    <a href="./index.html" id="link" >Login</a><br><br>
+    <input type="submit" value="Entrar" onclick="cadastro();return false;" id="botao">
+
+    <br>
+    
+</form>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

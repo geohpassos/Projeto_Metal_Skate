@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="shortcut icon" type="imagex/png" href="../LOJA/img/logo2.PNG" id="icon">
+    <script src="../js/index.js"></script>
+</head>
+<body class="principal">
+    <div class="formulario">
+        <form id="form-login" onsubmit="logar(event)">
+            <div class="imagem">
+            <img src="./img/logo2.PNG" alt="">
+            </div>
+    <h3>METAL SKATE</h3>
+    <input type="text" placeholder="E-mail" id="usuario"
+     required="true" minlength="3" maxlength="15">
+    <br><br>
+    <input type="password" placeholder="Senha" id="senha" 
+    required="true" minlength="3" maxlength="8">
+    <br>
+    <a href="./cadastro.html" id="link" >Cadastre-se</a><br><br>
+    <input type="submit" value="Entrar" onclick="logar();return false;" id="botao">
+
+    <br>
+    
+</form>
+</div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
